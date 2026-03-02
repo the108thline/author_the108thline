@@ -14,7 +14,6 @@
     .book-cover {
       box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.3);
       transition: transform 0.4s ease;
-      /* Adding a slight border on the left gives it a "spine" look */
       border-left: 6px solid #d6d3d1; 
       border-radius: 4px 12px 12px 4px;
     }
@@ -55,7 +54,7 @@
       <div class="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-6">
         <button onclick="document.getElementById('buy').scrollIntoView({ behavior: 'smooth' })" 
                 class="bg-amber-800 hover:bg-amber-900 text-white text-lg px-8 py-4 rounded-xl font-semibold transition-all active:scale-95 shadow-lg flex items-center gap-2">
-          Buy Now @ ₹69 <i class="fas fa-arrow-right text-sm"></i>
+          Buy Now @ ₹49 <i class="fas fa-arrow-right text-sm"></i>
         </button>
         <div class="text-sm">
           <span class="block text-green-700 font-bold"><i class="fas fa-bolt mr-1"></i> Instant Download</span>
@@ -114,11 +113,16 @@
       <p class="text-xl text-amber-100/80 mb-12">Instant access after purchase. Read on phone, tablet, Kindle or laptop.</p>
       
       <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-10 md:p-16 shadow-2xl">
-        <div class="text-7xl font-bold mb-2 tracking-tighter">₹69</div>
+        <div class="text-7xl font-bold mb-2 tracking-tighter">₹49</div>
         <p class="text-amber-200 text-lg font-medium">One-time payment • Lifetime access</p>
         
-        <a href="https://imjo.in/4WM8YS" target="_blank"
-           class="mt-10 block w-full bg-white hover:bg-amber-50 text-amber-950 font-bold text-2xl py-5 rounded-2xl transition-all hover:scale-[1.02] shadow-xl">
+        <a href="https://the108thline.myinstamojo.com/product/the-108th-line/" 
+           rel="im-new-checkout" 
+           data-store-name="the108thline" 
+           data-domain="https://the108thline.myinstamojo.com" 
+           data-id="6977543" 
+           data-layout="vertical"
+           class="mt-10 block w-full text-center bg-white hover:bg-amber-50 text-amber-950 font-bold text-2xl py-5 rounded-2xl transition-all hover:scale-[1.02] shadow-xl">
           Buy Now & Download Instantly
         </a>
         
@@ -154,8 +158,8 @@
     <div class="max-w-3xl mx-auto px-6 text-center">
       <h2 class="heading-font text-3xl font-bold text-stone-900 mb-6">Public Contact Details</h2>
       <div class="text-stone-700 text-lg space-y-3 bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
-        <p><i class="fas fa-envelope text-amber-800 mr-2"></i> <strong>Email:</strong> authorofthe108thline@gmail.com</p>
-        <p><i class="fas fa-phone text-amber-800 mr-2"></i> <strong>Phone:</strong> +91 75064 80832</p>
+        <p><i class="fas fa-envelope text-amber-800 mr-2"></i> <strong>Email:</strong> support@yourdomain.com</p>
+        <p><i class="fas fa-phone text-amber-800 mr-2"></i> <strong>Phone:</strong> +91 98765 43210</p>
         <p><i class="fas fa-map-marker-alt text-amber-800 mr-2"></i> <strong>Address:</strong> Kolkata, West Bengal, India</p>
       </div>
     </div>
@@ -168,7 +172,7 @@
         <p><strong>1. Introduction:</strong> By purchasing "The 108th Line", you agree to the terms outlined below. This e-book is for personal use only.</p>
         <p><strong>2. Intellectual Property:</strong> All content, formatting, and text within this book are the intellectual property of Roni Mondal. You may not distribute, reproduce, or resell this digital file without explicit permission.</p>
         <p><strong>3. Delivery:</strong> Upon successful payment, you will receive an instant download link. Ensure your email address is entered correctly at checkout.</p>
-        <p><em></em></p>
+        <p><em>(Note: Replace this placeholder text with your complete terms and conditions.)</em></p>
       </div>
     </div>
   </section>
@@ -200,5 +204,7 @@
       </p>
     </div>
   </footer>
+
+  <script src="https://manage.instamojo.com/assets/js/pay_button/button.min.js"></script>
 </body>
 </html>
