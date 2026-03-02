@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The 108th Line - by RONI MONDAL</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Georgia&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+    
+    body { font-family: 'Georgia', serif; }
+    .heading-font { font-family: 'Playfair Display', serif; }
+    .book-cover {
+      box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease;
+      /* Adding a slight border on the left gives it a "spine" look */
+      border-left: 6px solid #d6d3d1; 
+      border-radius: 4px 12px 12px 4px;
+    }
+    .book-cover:hover { transform: scale(1.03) translateY(-5px); }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+  
+  <nav class="bg-white/90 backdrop-blur-md border-b border-stone-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold heading-font text-amber-900 tracking-tight">The 108th Line</div>
+      <div class="hidden md:flex gap-8 text-lg items-center">
+        <a href="#about" class="hover:text-amber-700 transition">The Book</a>
+        <a href="#author" class="hover:text-amber-700 transition">Author</a>
+        <button onclick="document.getElementById('buy').scrollIntoView({ behavior: 'smooth' })" 
+                class="bg-amber-800 hover:bg-amber-900 text-white px-6 py-2.5 rounded-full font-medium transition shadow-md">
+          Buy Now
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center min-h-[80vh]">
+    
+    <div class="order-2 md:order-1">
+      <h1 id="book-title" class="heading-font text-5xl md:text-7xl leading-tight font-bold text-stone-900">
+        The 108th Line
+      </h1>
+      <p class="text-2xl mt-4 text-stone-600">by <span id="author-name" class="font-bold text-amber-900 tracking-wide">RONI MONDAL</span></p>
+      
+      <p id="tagline" class="mt-8 text-lg md:text-xl leading-relaxed text-stone-700 border-l-4 border-amber-800 pl-4 italic">
+        "Some love stories aren't measured by the moments you shared, but by the agonizing silence of the words you never dared to speak."
+      </p>
+      <p class="mt-4 text-lg text-stone-600">
+        The 108th Line is a poignant coming-of-age novella that explores the devastating normalcy of unrequited love and the shared anxieties of the Indian educational system.
+      </p>
+      
+      <div class="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+        <button onclick="document.getElementById('buy').scrollIntoView({ behavior: 'smooth' })" 
+                class="bg-amber-800 hover:bg-amber-900 text-white text-lg px-8 py-4 rounded-xl font-semibold transition-all active:scale-95 shadow-lg flex items-center gap-2">
+          Buy Now @ ₹69 <i class="fas fa-arrow-right text-sm"></i>
+        </button>
+        <div class="text-sm">
+          <span class="block text-green-700 font-bold"><i class="fas fa-bolt mr-1"></i> Instant Download</span>
+          <span class="text-stone-500 font-medium">PDF + EPUB • Any device</span>
+        </div>
+      </div>
+
+      <div class="mt-10 flex gap-8 text-sm items-center border-t border-stone-200 pt-6">
+        <div><span class="text-amber-500">★★★★★</span> <span class="text-stone-600 font-medium ml-1">4.2 (28 reviews)</span></div>
+        <div class="text-stone-600 font-medium"><i class="fas fa-download mr-1 text-stone-400"></i> 50+ happy readers</div>
+      </div>
+    </div>
+
+    <div class="order-1 md:order-2 flex justify-center md:justify-end pb-8 md:pb-0">
+      <img id="book-cover" 
+           src="IMG-20260301-WA0001.jpg" 
+           alt="The 108th Line - Book Cover by Roni Mondal" 
+           class="book-cover w-64 md:w-96 object-cover">
+    </div>
+  </section>
+
+  <section id="about" class="py-24 bg-white border-t border-stone-100">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="heading-font text-4xl font-bold text-center mb-10 text-stone-900">About the Book</h2>
+      <div id="book-description" class="prose prose-lg max-w-none text-stone-700 leading-relaxed text-center md:text-left space-y-6">
+        <p><strong>"The 108th Line"</strong> is a deeply nostalgic, bittersweet coming-of-age novella (e-book) about the crushing expectations of youth, the shared trauma of Indian board exams, and the agonizing beauty of the words we never find the courage to say.</p>
+        <p>This book is a tribute to the "almosts." It is for anyone who has ever walked out of a school gate, looked back one last time, and carried a "what if" with them for the rest of their life.</p>
+      </div>
+      
+      <div class="grid grid-cols-2 gap-6 mt-16 max-w-lg mx-auto text-center">
+        <div class="bg-stone-50 border border-stone-200 p-8 rounded-2xl shadow-sm">
+          <p class="text-4xl font-bold text-amber-900 mb-1">70</p>
+          <p class="text-stone-500 font-medium uppercase tracking-wider text-sm">Pages</p>
+        </div>
+        <div class="bg-stone-50 border border-stone-200 p-8 rounded-2xl shadow-sm">
+          <p class="text-4xl font-bold text-amber-900 mb-1">2026</p>
+          <p class="text-stone-500 font-medium uppercase tracking-wider text-sm">Published</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="author" class="py-24 bg-stone-100">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="heading-font text-4xl font-bold mb-8 text-stone-900">About the Author</h2>
+      <div class="w-16 h-1 bg-amber-800 mx-auto mb-8 rounded-full"></div>
+      <p id="author-bio" class="text-lg md:text-xl leading-relaxed text-stone-700">
+        <strong>Roni Mondal</strong> is the author of <em>The 108th Line</em>. He specializes in writing deeply emotional, slice-of-life fiction centered around the Indian teenage experience, the weight of academic expectations, and the quiet tragedy of unspoken words. He writes to give a voice to the feelings we usually keep hidden in the margins of our notebooks.
+      </p>
+    </div>
+  </section>
+
+  <section id="buy" class="py-24 bg-gradient-to-br from-stone-900 to-amber-950 text-white">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="heading-font text-5xl font-bold mb-6 text-white">Get Your Copy Today</h2>
+      <p class="text-xl text-amber-100/80 mb-12">Instant access after purchase. Read on phone, tablet, Kindle or laptop.</p>
+      
+      <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-10 md:p-16 shadow-2xl">
+        <div class="text-7xl font-bold mb-2 tracking-tighter">₹69</div>
+        <p class="text-amber-200 text-lg font-medium">One-time payment • Lifetime access</p>
+        
+        <a href="https://YOUR-INSTAMOJO-LINK-HERE" target="_blank"
+           class="mt-10 block w-full bg-white hover:bg-amber-50 text-amber-950 font-bold text-2xl py-5 rounded-2xl transition-all hover:scale-[1.02] shadow-xl">
+          Buy Now & Download Instantly
+        </a>
+        
+        <div class="mt-8 flex justify-center items-center gap-2 text-sm text-amber-200/70">
+          <i class="fas fa-lock"></i>
+          <p>Secured by Instamojo Payment Gateway</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="heading-font text-4xl font-bold text-center mb-14 text-stone-900">Frequently Asked Questions</h2>
+      <div class="space-y-6">
+        <div class="p-6 border border-stone-200 rounded-2xl bg-stone-50">
+          <p class="font-bold text-xl text-stone-900">Is this a physical book or eBook?</p>
+          <p class="text-stone-600 mt-2 text-lg">Digital eBook only (PDF + EPUB). You get an instant download link immediately after purchase.</p>
+        </div>
+        <div class="p-6 border border-stone-200 rounded-2xl bg-stone-50">
+          <p class="font-bold text-xl text-stone-900">Can I read it on Kindle?</p>
+          <p class="text-stone-600 mt-2 text-lg">Yes! You can easily send the included EPUB file directly to your Kindle device or app.</p>
+        </div>
+        <div class="p-6 border border-stone-200 rounded-2xl bg-stone-50">
+          <p class="font-bold text-xl text-stone-900">What is the refund policy?</p>
+          <p class="text-stone-600 mt-2 text-lg">Due to the digital nature of the book, refunds are not available for this purchase.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-stone-50 border-t border-stone-200">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="heading-font text-3xl font-bold text-stone-900 mb-6">Public Contact Details</h2>
+      <div class="text-stone-700 text-lg space-y-3 bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
+        <p><i class="fas fa-envelope text-amber-800 mr-2"></i> <strong>Email:</strong> authorofthe108thline@gmail.com</p>
+        <p><i class="fas fa-phone text-amber-800 mr-2"></i> <strong>Phone:</strong> +91 75064 80832</p>
+        <p><i class="fas fa-map-marker-alt text-amber-800 mr-2"></i> <strong>Address:</strong> Kolkata, West Bengal, India</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="terms" class="py-16 bg-white border-t border-stone-200">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="heading-font text-3xl font-bold text-stone-900 mb-6">Terms and Conditions</h2>
+      <div class="text-sm text-stone-600 space-y-4 leading-relaxed bg-stone-50 p-8 rounded-2xl border border-stone-100">
+        <p><strong>1. Introduction:</strong> By purchasing "The 108th Line", you agree to the terms outlined below. This e-book is for personal use only.</p>
+        <p><strong>2. Intellectual Property:</strong> All content, formatting, and text within this book are the intellectual property of Roni Mondal. You may not distribute, reproduce, or resell this digital file without explicit permission.</p>
+        <p><strong>3. Delivery:</strong> Upon successful payment, you will receive an instant download link. Ensure your email address is entered correctly at checkout.</p>
+        <p><em></em></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="refund" class="py-16 bg-stone-50 border-t border-stone-200">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="heading-font text-3xl font-bold text-stone-900 mb-6">Refund & Cancellation Policy</h2>
+      <div class="text-sm text-stone-600 space-y-4 leading-relaxed bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
+        <p><strong>Digital Goods Policy:</strong> Because "The 108th Line" is delivered as an instant digital download (PDF/EPUB), we cannot retrieve the file once it has been downloaded.</p>
+        <p><strong>No Refunds:</strong> Therefore, all sales are final. We do not offer refunds, returns, or cancellations after a purchase has been completed.</p>
+        <p><strong>Support:</strong> If you experience any technical issues downloading or opening your file, please reach out to us via our contact details above, and we will ensure you receive a working copy immediately.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-800">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
+      <p class="text-2xl heading-font text-stone-200 mb-6">The 108th Line</p>
+      
+      <div class="flex flex-wrap justify-center gap-6 md:gap-10 mb-10 text-sm font-medium">
+        <a href="#contact" class="hover:text-amber-500 transition">Contact Details</a>
+        <a href="#terms" class="hover:text-amber-500 transition">Terms & Conditions</a>
+        <a href="#refund" class="hover:text-amber-500 transition">Refund Policy</a>
+      </div>
+
+      <p>&copy; 2026 Roni Mondal. All Rights Reserved.</p>
+      <p class="mt-4 text-sm text-stone-500 flex items-center justify-center gap-1">
+        Made with <i class="fas fa-heart text-amber-800"></i> for readers in India
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
